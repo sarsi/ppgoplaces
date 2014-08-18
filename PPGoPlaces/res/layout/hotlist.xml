@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_of_holiday" />
+    
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add_new_holiday" 
+        android:onClick="addNewHolidayClick"/>
+        
+    <ListView 
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleName"
+        android:layout_above="@id/addButton" />
+   
+   <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:text="@string/no_holiday"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_below="@id/titleName"
+        android:layout_above="@id/addButton"
+        android:textSize="18dp" />
+   
+   <TextView
+        android:id="@+id/holidayname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleName"
+        android:textSize="18dp" />
+
+</RelativeLayout>

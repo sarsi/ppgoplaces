@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleName"        
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="@string/new_item"  />
+    	<!-- style="@style/TextViewBlue" -->
+           
+    <EditText
+        android:id="@+id/itemName"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textAutoCorrect"
+        android:layout_below="@id/titleName"
+         android:hint="@string/enter_item_name"
+        android:lines="2" >
+    	<requestFocus />
+    </EditText>   
+       <!--  style="@style/EditTextBlue" -->
+    
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"        
+        android:text="@string/target_price"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+     <EditText
+        android:id="@+id/targetPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceText"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="numberDecimal" > 
+    </EditText><!--  -->
+    
+    <ToggleButton
+        android:id="@+id/toggleHome"       
+        android:layout_width="100sp"
+        android:layout_height="30dp"       
+        android:layout_alignRight="@+id/itemName"
+        android:layout_above="@+id/holidaySpinner"
+        android:layout_toRightOf="@+id/targetPrice"
+        android:layout_below="@id/itemName"
+        android:textStyle="bold"
+        android:text="@string/home"
+        android:textOff="@string/holiday"
+        android:textOn="@string/home" /> 
+        <!--android:layout_toRightOf="@+id/addItem"  
+        style="@style/ToggleButtonBlue"
+        android:layout_alignRight="@+id/itemName"
+        android:layout_below="@id/titleName"
+        android:layout_above="@+id/itemName"
+        android:layout_toRightOf="@+id/titleName"
+        android:layout_below="@id/itemName"
+        android:onClick="onToggleClick"
+        -->
+    
+   
+    <Spinner
+        android:id="@+id/holidaySpinner"       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/targetPrice"
+        android:layout_alignRight="@+id/itemNotes" />
+    	<!--  style="@style/SpinnerBarAlt"
+    	android:textColor="#003366" -->
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/targetPrice"
+        android:textStyle="bold"
+       	android:visibility="invisible" />
+    	<!--  android:textSize="@dimen/item_text_size" 
+    	 android:layout_alignParentLeft="true"
+    	 android:layout_centerVertical="true"
+    	 android:background="#00000000"
+       	 android:textColor="#99ccff"-->
+    
+    <Spinner
+        android:id="@+id/catSpinner"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/holidaySpinner"
+        android:layout_alignRight="@+id/itemNotes" />
+        <!-- android:textColor="#003366" 
+        style="@style/SpinnerBarAlt"-->
+
+    
+    <EditText
+        android:id="@+id/itemNotes"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine|textAutoCorrect"
+        android:layout_below="@id/catSpinner"
+        android:layout_alignParentBottom="true"
+        android:hint="@string/notes_"
+        android:lines="8" />
+    	<!-- style="@style/EditTextBlue" -->
+
+</RelativeLayout>

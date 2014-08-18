@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="281dp"
+            android:layout_above="@+id/slidingDrawer1"
+            android:src="@drawable/ppgoplaces" />
+                
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle" >
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drawer" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CheckBox" />
+
+
+                <Button
+		            android:id="@+id/Button1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		             />
+                
+
+            </LinearLayout>
+        </SlidingDrawer>
+
+    </RelativeLayout>

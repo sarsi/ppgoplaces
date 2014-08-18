@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+android:oneshot="false">
+	<item android:drawable="@drawable/cal_button_blue" android:duration="1000" />
+	<item android:drawable="@drawable/cal_button_orange" android:duration="1000" />
+	<item android:drawable="@drawable/cal_button_up" android:duration="1000" />
+	<item android:drawable="@drawable/cal_button_light_blue" android:duration="1000" />
+	<item android:drawable="@drawable/cal_button_gray" android:duration="1000" />
+</animation-list>

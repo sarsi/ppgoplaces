@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:padding="@dimen/small_padding"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"> <!-- style="@style/YellowListView" -->
+	<CheckedTextView
+		android:id="@android:id/text1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/item_text_size"	    
+	    android:layout_marginLeft="@dimen/small_padding"
+	    android:gravity="center_vertical"
+	    android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+	<!-- android:layout_marginTop="@dimen/small_padding"
+	android:textColor="#000000"-->
+	<TextView 
+		android:id="@+id/price_text"
+		android:textSize="@dimen/small_text_size"
+	    android:layout_width="fill_parent" 	    
+	    android:layout_height="wrap_content"
+	    android:layout_below="@android:id/text1"
+	    android:visibility="gone"	/>    	    <!-- android:textColor="#333333" -->
+</LinearLayout>
+<!-- Shopping List - itemListAdpater listview item layout view -->
+<!-- 
+background darker blue"#33CCFF" text "#003366"
+android:background="@drawable/row_background" 
+com.liseem.android.travel.views.ShoppingListItem -->

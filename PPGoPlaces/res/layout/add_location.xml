@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"
+    android:padding="@dimen/small_padding" >
+    <!-- android:background="#3399ff" -->
+
+    <Spinner
+        android:id="@+id/holidaySpinner"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="#ff9933"
+        />
+    	<!--  
+    	style="@style/SpinnerBarAlt"
+    	android:layout_below="@id/addButton" 
+    	 -->
+
+     <TextView
+        android:id="@+id/emptyList"
+        style="@style/TextViewBlue"
+        android:background="@drawable/text_brown_border_transparent"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:text="@string/home_general" />
+     	<!-- android:layout_below="@id/addButton"  -->
+        
+    <TextView
+        android:id="@+id/locDate"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/useThis"
+        android:layout_alignTop="@+id/holidaySpinner"
+        android:layout_alignParentRight="true"        
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/small_padding"        
+        android:textSize="@dimen/small_text_size"/> 
+        <!--android:textColor="#99ccff"
+        android:layout_toRightOf="@id/holidaySpinner"
+        android:layout_below="@id/addButton"
+        android:onClick="changeDateClick" 
+        android:textStyle="bold"  -->
+
+    <EditText
+        android:id="@+id/locName"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/locDate"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:hint="@string/loc_name_hint"
+        android:lines="4" > 
+        <!-- 
+        style="@style/EditTextBlue"
+        android:layout_below="@id/holidaySpinner" -->
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/locAdd"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locName"
+        android:inputType="text|textMultiLine|textAutoCorrect"
+        android:ems="10"
+        android:hint="@string/enter_location_address"
+        android:lines="3" />
+    	<!-- style="@style/EditTextBlue" -->
+
+    <TextView
+        android:id="@+id/locInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/locAdd"
+        android:layout_alignRight="@+id/holidaySpinner"
+        android:layout_below="@+id/locAdd"
+        android:lines="3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+    
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/locInfo"
+        android:layout_below="@id/locInfo"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Indoor" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outdoor" />
+    </RadioGroup>
+    
+    <ImageButton
+        android:id="@+id/useThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/locAdd"
+        android:layout_below="@id/locAdd"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_marginTop="@dimen/padding"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:layout_marginRight="@dimen/padding"        
+        android:src="@drawable/address_this2"
+        android:text="@string/get_address" 
+       	android:fromYDelta="0"
+    	android:toYDelta="100"
+    	android:duration="1000"
+    	android:interpolator="@anim/cycler"/> 
+    	<!-- 
+    	animation nothing happen ?? 
+    	android:layout_toRightOf="@id/locInfo" "@drawable/envelope"-->
+
+    <ImageButton
+        android:id="@+id/mapIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/useThis"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/locAdd"
+        android:layout_below="@id/useThis"
+        android:layout_margin="@dimen/small_padding"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:layout_marginRight="@dimen/padding"
+        android:src="@drawable/map_this2" />
+    	<!-- android:src="@drawable/map_this2" -->
+
+    <Button
+        android:id="@+id/locUpdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignLeft="@+id/locInfo"
+        android:layout_alignParentBottom="true" />
+    <!-- 
+    android:layout_below="@id/radioGroup1"
+    android:layout_toLeftOf="@+id/useThis" -->
+
+</RelativeLayout>

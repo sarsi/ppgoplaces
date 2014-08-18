@@ -1,0 +1,12 @@
+body {
+	color: #003366;
+	font-size: 12dpi;
+	font-weight: normal;
+	font-family: Arial;
+}
+a { font-style: normal; }
+
+h1 a {
+	color: #ff99cc;
+	font-size:14dpi;
+	font-weight: bold; }

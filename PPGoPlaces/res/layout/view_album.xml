@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#CCFFFF"
+    android:layout_height="fill_parent">
+
+    <TextView
+       android:id="@+id/titleName"
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/menu_item_height"
+       android:layout_marginTop="@dimen/small_padding"
+       android:gravity="center_horizontal|center_vertical"
+       android:textSize="@dimen/item_text_size"
+       android:textColor="#000000"
+       android:textStyle="bold"
+       android:background="#DDEEBD"
+       android:text="Photo Album" />
+
+	<ListView
+	    android:id="@+id/listView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/titleName" />	
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/small_padding"
+    android:paddingRight="@dimen/small_padding"
+    android:paddingTop="@dimen/small_padding"     
+    android:orientation="vertical" > 
+    <!--     android:background="#3399ff"
+     -->
+   
+    <TextView
+        android:id="@+id/titleName"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/edit_holiday"
+        android:textStyle="bold" />
+    	<!-- 
+    	android:textColor="#ffffff"
+    	style="@style/TextViewBlue" -->
+
+
+    <TextView        
+	    android:id="@+id/hintDate"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:layout_below="@id/titleName"		       	
+       	android:text="@string/hint_date"/>
+    	<!-- style="@style/TextViewBlue"  -->
+    
+	<TextView
+ 		android:id="@+id/startDate"
+ 		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		android:clickable="true"
+		android:layout_marginLeft="@dimen/small_padding"
+		android:layout_marginTop="@dimen/small_padding"
+		android:layout_below="@id/hintDate"/> 
+		<!--
+		android:textColor="#000000"  
+		android:layout_height="60dp"
+		android:clickable="true"
+		android:onClick="changeStartDateClick" -->
+ 	
+	<TextView
+ 		android:id="@+id/endDate"
+	    android:layout_width="120dp"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:textStyle="bold"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/hintDate"
+	    android:clickable="true"
+		android:layout_marginLeft="@dimen/small_padding"
+		android:layout_marginTop="@dimen/small_padding" />
+		<!-- 
+		android:textColor="#000000"
+		android:layout_height="60dp"
+		android:clickable="true"
+	    android:onClick="changeEndDateClick" -->
+	
+	<EditText	    
+	    android:id="@+id/tripName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textCapWords"
+	    android:layout_below="@id/startDate"
+	    android:focusable="true"
+	    android:lines="2" /> 
+	    <!-- style="@style/EditTextBlue" -->
+
+	<EditText
+	    
+	    android:id="@+id/holCountry"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textCapWords"
+	    android:layout_below="@id/tripName" /> 
+	    <!-- style="@style/EditTextBlue" -->
+
+	<EditText	    
+ 		android:id="@+id/tripNotes"
+ 		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_below="@id/holCountry"
+		android:inputType="text|textMultiLine|textAutoCorrect"
+		android:scrollbars="vertical"
+		android:hint="@string/notes_"
+		android:gravity="top|left"/>
+		<!-- style="@style/EditTextBlue" -->
+		 		
+</RelativeLayout>

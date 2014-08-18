@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liseem.android.travel"
+	android:sharedUserId="com.liseem.travel"
+    android:versionCode="12"
+    android:versionName="1.2" >	
+    <!-- next release v1.2 versionCode 12 is still work in progress -->
+    <!-- last release September 18, 2012 -->
+    <!-- last versionCode 10, versionName=1.1, Build 155-->
+    <!--  android:sharedUserId="com.liseem.travel" -->
+    <!--  minor version .01 bug fix, 0.1 new feature added -->
+    
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>    
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" ></uses-permission>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" ></uses-permission>
+	
+	<permission
+    android:name="com.liseem.android.travel.permission.MAPS_RECEIVE"
+    android:protectionLevel="signature" />
+	<uses-permission android:name="com.liseem.android.travel.permission.MAPS_RECEIVE" />	
+	
+    <uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"/>
+	<uses-feature
+    		android:glEsVersion="0x00020000"
+    		android:required="true" />
+ 
+    	
+    <application 
+        android:name=".PPGoPlacesApplication"
+        android:icon="@drawable/ppgoplaces"
+        android:label="@string/app_name"
+		
+        android:allowBackup="true"
+        android:backupAgent="MyBackupAgent">
+        <!-- android:theme="@style/MyAppTheme"  -->
+        <!-- android:debuggable="true" -->
+        <!-- Map current in debug key = "true -->
+        
+        <meta-data 
+            android:name="com.google.android.backup.api_key"
+    		android:value="AEdPqrEAAAAI6dzQwq3YOlSdS0DvJaXwr_j1Ds3YzqVBYuHQzw" />
+        
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY" 
+            android:value="AIzaSyBVGF_OwWZ5rf8ueLFRly3jlqDtZQnvA1o" />
+			<!--Production AIzaSyCmsukYhFRrTXFKS-xVzlNiTr53ZzyTIus -->
+			<!-- Debug  AIzaSyAO3FOHjhwiTVcck9uMD7fggNfwuXlC_us -->
+			
+        <!-- android:name=".PPGoPlaces" before fragment implementation -->
+        <activity
+            android:name=".FragMain"
+            android:label="@string/app_name"
+            
+            android:windowSoftInputMode="stateHidden"
+            android:alwaysRetainTaskState="true"
+           	android:theme="@android:style/Theme.Holo"
+           	>
+           	<!--   android:screenOrientation="portrait" 
+           	android:launchMode="singleInstance" - culprit for camera onActivityResult null
+           	android:theme="@android:style/Theme.Holo-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />                
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".LocationReceive" 
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/add_new_location"  >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>              
+                <action android:name="android.intent.action.VIEW"/>              
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/ppgp"/><!-- "application/ppgp" , work "*/*"-->
+                <data android:pathPattern="*.ppgp"/> <!-- "*.ppgp" , working ".*\\.ppgp" -->
+
+				<data android:host="*" />
+             </intent-filter>	<!--  data android:scheme="*"--> <!-- <action android:name="android.intent.action.EDIT" /> -->
+        </activity>
+        
+        <activity android:name=".HolidayView" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/view_holiday"/>
+        	<!--  android:theme="@android:style/Theme.Holo.Light.DarkActionBar" -->
+        
+        <activity android:name=".HolidayAdd" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/add_new_holiday"/>
+        
+        <activity android:name=".HolidayEdit" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/edit_holiday"/>
+ 
+       <activity android:name=".MapHolidayLocations" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="View Holiday Map"/>
+        
+        <activity android:name=".LocationView" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/view_locations"/>
+        
+        <activity android:name=".LocationAdd" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"                   
+            android:text="@string/add_new_location"  />
+        <!-- android:stateNotNeeded="true"  android:finishOnCloseSystemDialogs="true"    -->
+        
+        <activity android:name=".LocationEdit" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/add_new_location"  />
+
+       <activity android:name=".MapLocation" 
+           android:screenOrientation="portrait"
+           android:finishOnCloseSystemDialogs="true"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/map_title"/>
+       
+        <activity android:name=".MapDisplayLocation" 
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/map_title"/>
+       
+        <activity android:name=".PhotoAlbum" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/image_gallery"/>
+        
+      	<activity android:name=".FileDirChooser"
+           android:theme="@android:style/Theme.NoTitleBar"/>
+       
+        
+        <activity android:name=".PhotoAdd" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/image_gallery"/>
+       
+        <activity android:name=".ShoppingList" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/shopping"/>
+    
+        <activity android:name=".ShoppingAdd" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/add_shopping"/>
+        
+        <activity android:name=".EditShopping" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/add_shopping"/>
+        
+       <activity android:name=".ShoppingEditCat"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/shopping"/>     
+        
+       <activity android:name=".HolidayCheckList" 
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/holiday_checklist"/>
+       
+       <activity android:name=".CheckAddTask" 
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar"
+            android:text="@string/add_shopping"/>
+       
+      <activity android:name=".CheckCatEdit"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/holiday_checklist"/>     
+       
+       <activity android:name=".TripCalculator"
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/handyman"/>
+       
+       <activity android:name=".TipAndFxDialog"
+           android:screenOrientation="portrait"
+           android:text="@string/handyman"/>
+       
+       <activity android:name=".MySettings"
+           android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/update_my_preferences"/>
+       
+      <activity android:name=".SimpleHelp"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/simple_help"/>
+              
+       <activity android:name=".CameraActionClick"
+           android:finishOnCloseSystemDialogs="true"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/image_gallery"/>
+      
+       <activity android:name=".ImageGalleryPicker"
+           android:finishOnCloseSystemDialogs="true"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/image_gallery"/>
+       
+       <activity android:name=".BlueToothShare"
+           android:finishOnCloseSystemDialogs="true"
+           android:theme="@android:style/Theme.NoTitleBar"/>
+       
+       <activity android:name=".Eula"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:text="@string/eula_title"/>
+      
+      <uses-library
+        android:name="com.google.android.maps"
+        android:required="false" />
+            
+    </application>
+
+</manifest>

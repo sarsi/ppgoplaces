@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding" > 
+    	<!-- android:background="#3399ff" -->
+
+    <Button
+        android:id="@id/addButton"        
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/locName"
+        android:layout_alignRight="@+id/locDate"  
+        android:visibility="gone"      
+        android:text="@string/update_location" />
+    	<!-- android:onClick="updateLocationClick" style="@style/CalButtonBlue"-->
+
+    <EditText
+        android:id="@+id/locName"        
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="textCapWords"
+        android:layout_below="@id/addButton"
+        android:ems="10"
+        android:lines="1" >
+        <requestFocus />
+    </EditText>
+    	<!-- style="@style/EditTextBlue" -->
+    
+    <Spinner
+        android:id="@+id/holidaySpinner"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locName" />
+    	<!-- style="@style/SpinnerBarAlt" -->
+
+    <TextView
+        android:id="@+id/emptyList"        
+        android:background="@drawable/text_brown_border_transparent"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:layout_below="@id/locName" 
+        android:text="@string/home_general" />
+    	<!-- style="@style/TextViewBlue" -->
+ 
+    <TextView
+        android:id="@+id/locDate"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/locName"
+        android:layout_toRightOf="@id/holidaySpinner"          
+        android:layout_marginLeft="@dimen/small_padding"             
+        android:layout_marginBottom="@dimen/small_padding"        
+        android:textSize="@dimen/small_text_size" />
+    	<!-- android:textStyle="bold"
+        android:textSize="@dimen/button_text_size" 
+    	android:onClick="changeDateClick" 
+    	android:textColor="#99ccff"
+    	android:clickable="true" -->
+
+    <EditText
+        android:id="@+id/locAdd"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locDate"
+        android:inputType="text|textMultiLine|textAutoCorrect"
+        android:ems="10"
+        android:lines="6" />
+    	<!-- style="@style/EditTextBlue" -->
+
+    <TextView
+        android:id="@+id/locNotes"       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/useThis"
+        android:layout_toLeftOf="@+id/useThis"        
+        android:lines="5"/>
+    	<!--  style="@style/SmallTextViewBlue" 
+    	android:textColor="#ffffff" -->
+
+    <Button
+        android:id="@+id/sayCheese"       
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@id/addButton"
+        android:layout_alignBottom="@id/addButton"
+        android:layout_alignLeft="@+id/locDate"
+        android:layout_alignRight="@+id/locName"        
+        android:visibility="gone"
+        android:text="@string/camera" />
+    	<!--  style="@style/CalButtonOrange"
+    	 android:onClick="cameraOnClick"-->
+
+    <ImageButton
+        android:id="@+id/useThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/locDate"
+        android:layout_below="@+id/locAdd"
+        android:layout_margin="@dimen/small_padding"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/address_this2" />
+    
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/holidaySpinner"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Information" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:background="#006699" >
+
+            <ImageButton
+                android:id="@+id/mapIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"               
+                android:layout_margin="@dimen/small_padding"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:hapticFeedbackEnabled="true"
+                android:padding="@dimen/small_padding"
+                android:src="@drawable/map_this2"
+                android:text="@string/find_map" />
+            	<!--  android:layout_below="@+id/locAdd" -->
+
+            <TextView
+                android:id="@+id/locLatText"                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mapIT" />
+            	<!-- style="@style/SmallTextViewBlue"
+            	android:textColor="#ffffff"  -->
+
+            <EditText
+                android:id="@+id/locLat"               
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locLatText"
+                android:layout_margin="@dimen/small_padding"
+                android:layout_toRightOf="@id/mapIT"
+                android:inputType="numberDecimal" />
+            	<!-- style="@style/EditTextBlue" -->
+
+            <TextView
+                android:id="@+id/locLongText"                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locLat"
+                android:layout_toRightOf="@id/mapIT" />
+            	<!-- style="@style/SmallTextViewBlue"
+            	 android:textColor="#ffffff"-->
+
+            <EditText
+                android:id="@+id/locLong"                
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locLongText"
+                android:layout_margin="@dimen/small_padding"
+                android:layout_toRightOf="@id/mapIT"
+                android:inputType="numberDecimal" />
+            	<!-- style="@style/EditTextBlue" -->
+
+            <TextView
+                android:id="@+id/locInfo"               
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/locLong"
+                android:layout_below="@+id/locAccuText"
+                android:layout_margin="@dimen/small_padding"
+                android:ems="10"
+                android:inputType="numberDecimal" 
+                android:lines="3"/>
+            	<!--  style="@style/TextViewBlue" -->
+
+        </RelativeLayout>
+
+    </SlidingDrawer>
+    
+</RelativeLayout>

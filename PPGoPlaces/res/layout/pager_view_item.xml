@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- work with AddPhoto.java pagerview item file for add_photo.xml -->
+<!-- PhotoAlbum photo view adapter inflate view -->
+<ImageView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/pagerView1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+</ImageView>

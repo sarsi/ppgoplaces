@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+	android:id="@+id/image1"
+	android:layout_width="319dp"
+	android:layout_height="349dp"
+	android:layout_x="1dp"
+	android:layout_y="82dp" />
+<CheckBox
+	android:id="@+id/marked"
+	android:layout_width="50dp"
+	android:layout_height="48dp"
+	android:layout_x="263dp"
+	android:layout_y="377dp" />
+<Gallery
+	android:id="@+id/gallery1"
+	android:layout_width="319dp"
+	android:layout_height="80dp"
+	android:layout_x="0dp"
+	android:layout_y="1dp" />
+</AbsoluteLayout>

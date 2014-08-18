@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#99ccff"
+                android:endColor="#006699"
+                android:angle="270" />
+            <stroke
+                android:width="1sp"
+                android:color="#3399ff" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="@dimen/small_padding"
+                android:top="@dimen/small_padding"
+                android:right="@dimen/small_padding"
+                android:bottom="@dimen/small_padding" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true" >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#99ff66"
+                android:endColor="#009900"
+                android:angle="270" />
+            <stroke
+                android:width="1sp"
+                android:color="#003300" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="@dimen/small_padding"
+                android:top="@dimen/small_padding"
+                android:right="@dimen/small_padding"
+                android:bottom="@dimen/small_padding" />
+        </shape>
+    </item>
+
+    <item>        
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#000000"
+                android:endColor="#006699"
+                android:angle="270" />
+            <stroke
+                android:width="1sp"
+                android:color="#cccccc" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="@dimen/small_padding"
+                android:top="@dimen/small_padding"
+                android:right="@dimen/small_padding"
+                android:bottom="@dimen/small_padding" />
+        </shape>
+    </item>
+</selector>

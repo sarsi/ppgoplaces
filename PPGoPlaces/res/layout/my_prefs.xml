@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/PPGPLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:background="@drawable/ppgoplaces" />
+
+    <TextView
+        android:id="@+id/titleLabel"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/PPGPLogo"
+        
+        android:gravity="center_horizontal"
+        android:padding="@dimen/small_padding"
+        android:text="@string/settings"
+        android:textSize="@dimen/item_text_size"
+        android:textStyle="bold" /> 
+        <!-- 
+        android:text="My Preferences" 
+        android:background="@drawable/text_brown_border_transparent"
+        style="@style/TextViewBlue"
+        -->
+	    	
+	     <CheckBox
+	         android:id="@+id/scrollCheck"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/PPGPLogo"
+	         android:layout_marginLeft="@dimen/padding"
+	         android:layout_marginTop="@dimen/padding" />
+	    
+	    <CheckBox
+	        android:id="@+id/mapCheck"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@id/scrollCheck"
+	        android:layout_below="@id/scrollCheck"
+	        android:layout_marginLeft="@dimen/padding"
+	        android:layout_marginTop="@dimen/padding" />
+	    
+	      <CheckBox
+	          android:id="@+id/mapAccur"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_alignRight="@id/scrollCheck"
+	          android:layout_below="@id/mapCheck"
+	          android:layout_marginLeft="@dimen/padding"
+	          android:layout_marginTop="@dimen/padding" />
+	    
+	      <TextView
+	          android:id="@+id/textView1"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/infoView"
+	          android:layout_below="@+id/mapAccur"
+	          android:layout_centerVertical="true"
+	          android:text="Location Filter Distance"
+	          android:textAppearance="?android:attr/textAppearanceMedium" />
+		    	
+	      <RadioGroup
+	          android:id="@+id/radioGroup1"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/lastBackup"
+	          android:layout_alignRight="@+id/infoView"
+	          android:layout_below="@+id/textView1"
+	          android:orientation="horizontal" >
+
+	          <RadioButton
+	              android:id="@+id/radio0"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="@dimen/small_padding"
+	              android:text="1Km" />
+
+	          <RadioButton
+	              android:id="@+id/radio1"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="@dimen/small_padding"
+	              android:text="2Km" />
+
+	          <RadioButton
+	              android:id="@+id/radio2"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_margin="@dimen/small_padding"
+	              android:text="5Km" />
+	      </RadioGroup>
+	      
+	    <TextView
+	        android:id="@+id/lastBackup"
+	        style="@style/TextViewBlue"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/infoView"
+	        android:layout_margin="@dimen/small_padding"
+	        android:layout_alignLeft="@id/scrollCheck"/>
+	      	      
+	      <TextView
+	          android:id="@+id/infoView"
+	          android:layout_width="fill_parent"
+	          android:layout_height="62dp"
+	          android:layout_alignLeft="@id/scrollCheck"
+	          android:layout_alignParentBottom="true"
+	          android:layout_centerHorizontal="true"
+	          android:layout_margin="@dimen/padding"
+	          android:lines="3"
+	          android:padding="@dimen/small_padding"
+	          android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+    <item 
+        android:id="@+id/editItem" 
+        android:alphabeticShortcut="@string/edit" 
+        android:title="Edit Item"
+        android:visible="true">
+    </item>
+
+   <item 
+       android:id="@+id/deleteItem" 
+       android:alphabeticShortcut="@string/delete" 
+       android:title="Delete Item" 
+       android:visible="true">
+    </item>
+    
+   <item 
+       android:id="@+id/addItem" 
+       android:alphabeticShortcut="@string/add" 
+       android:title="Add Location" 
+       android:visible="true">
+    </item>
+
+</menu> 

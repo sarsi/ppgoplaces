@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- use by custom_list.xml for task list adapter, style yellowlistview in main form style -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <item  android:state_focused="true" android:state_enabled="true" >
+                <shape android:shape="rectangle">
+						<gradient
+							android:startColor="#99ff66"
+							android:endColor="#009900"
+							android:type="linear"
+							android:angle="270" />
+			            <stroke
+			                android:width="2sp"
+			                android:color="#3399ff" />
+			            <corners
+			                android:radius="5dp" />			
+			</shape>        
+    </item>
+    
+    <item android:state_pressed="true" android:state_focused="true"  >
+        	        <shape android:shape="rectangle">
+						<gradient
+							android:startColor="#ff6600"
+							android:endColor="#ffcc99"
+							android:type="linear"
+							android:angle="270" />
+			            <stroke
+			                android:width="2sp"
+			                android:color="#99ccff" />
+			            <corners
+			                android:radius="5dp" />			
+			</shape>        
+    </item>
+    
+    <item>    
+		<shape android:shape="rectangle">
+					<gradient
+						android:startColor="#ffffcc"
+						android:endColor="#ffcc66"
+						android:type="linear"
+						android:angle="0" />
+		            <stroke
+		                android:width="2sp"
+		                android:color="#999999" />
+		            <corners
+		                android:radius="0dp" />
+		</shape> <!-- ffffcc  ffff66 -->
+	</item>
+</selector>	
+    

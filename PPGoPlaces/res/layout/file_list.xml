@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- use by view holiday and view location, item view file list_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#003366"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/infoText"
+        style="@style/SmallTextViewBlue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"      
+        android:lines="4"
+        android:padding="@dimen/small_padding"
+        android:scrollbars="vertical"
+        android:textColor="#ffffcc"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold" /> <!--  android:layout_below="@+id/searchText1"-->
+
+    <!--  ImageButton
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/infoText"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_toRightOf="@id/infoText"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/photo_album" /-->
+
+    <ListView
+        android:id="@+id/listItem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/addButton"
+        android:layout_below="@+id/infoText"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hapticFeedbackEnabled="true"
+        android:textFilterEnabled="true"
+        android:drawSelectorOnTop="true"
+        android:layoutAnimation="@anim/list_layout_controller"
+        android:listSelector="@drawable/text_orange_border_transparent"
+        android:persistentDrawingCache="animation|scrolling"
+        android:textSize="@dimen/item_text_size" >
+        <requestFocus />
+    </ListView> 
+        <!-- android:listSelector="@drawable/row_background_pressed_alt" -->
+
+    <Button
+        android:id="@id/addButton"
+        style="@style/ButtonBlue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:shadowColor="#565853"
+        android:text="@string/add_new"
+        android:textSize="@dimen/item_text_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/emptyList"
+        style="@style/TextViewBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/addButton"
+        android:layout_alignLeft="@id/addButton"
+        android:gravity="center"
+        android:text="@string/empty_list" />
+
+    <!-- ImageButton
+        android:id="@+id/sayCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewButton"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/small_padding"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/camera" /-->
+
+    <!-- Button
+        android:id="@+id/homeButton"
+        style="@style/ButtonOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/listItem"
+        android:layout_toRightOf="@id/addButton"
+        android:text="HOME"
+        android:textStyle="bold" 
+        android:visibility="invisible"/-->
+
+    <!-- EditText
+        android:id="@+id/searchText1"
+        style="@style/EditTextBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoText"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/emptyList"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords"
+        android:textSize="@dimen/item_text_size" 
+        android:visibility="gone">
+    </EditText> -->
+
+</RelativeLayout>

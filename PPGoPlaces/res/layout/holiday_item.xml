@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- use by holiday and location list adapter for view holiday and view location -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    style="@style/BlueListViewAlt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding" > <!-- style for list_item_background -->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/itemName"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/small_padding"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/item_text_size" >
+
+    </TextView>
+
+</RelativeLayout> 
+<!-- android:background="@drawable/row_background" android:layout_height="wrap_content"-->
+<!--  -->

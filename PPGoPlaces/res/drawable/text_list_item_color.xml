@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- tested on item list for tasklistadapter, not working -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item  android:color="#999999" android:state_checked="true" />
+   <item  android:color="#99ccff" android:state_checked="false" />
+ </selector>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/add_item"
+          android:title="add item" /> <!-- android:showAsAction="ifRoom" -->
+    
+    <item android:id="@+id/edit_item"
+          android:title="edit item" />
+    
+    <item android:id="@+id/act_select"
+          android:title="what ever">
+          
+          <!-- "file" submenu -->
+		        <menu>
+		            <item android:id="@+id/create_new"
+		                  android:title="new" />
+		            
+		            <item android:id="@+id/open"
+		                  android:title="open" />
+		            
+		        </menu>
+          </item>
+
+    <item android:id="@+id/help"
+          android:title="help" />
+    
+    <!-- menu group -->
+    
+    <group android:id="@+id/group_delete">
+        
+        <item android:id="@+id/menu_archive"
+              android:title="menu archive" />
+        
+        <item android:id="@+id/menu_delete"
+              android:title="menu delete" />
+    </group>
+    
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >    
+   
+    <!-- WebView android:id=@+id/webview -->
+
+    <TextView
+        android:id="@+id/calView"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1.40"
+        android:background="@drawable/text_brown_border_transparent"
+       	android:scrollbars="vertical"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+         android:textSize="@dimen/item_text_size" 
+        android:lines="5"/>
+    
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button style="@style/CalButtonOrange"   android:layout_height="50dp"  android:id="@+id/buttonClear" android:text="C" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonOrange"   android:layout_height="50dp"  android:id="@+id/buttonBackspace" android:layout_weight="1" android:text="B" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonGray" android:layout_height="50dp" android:id="@+id/buttonLeftParen" android:text="(" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonGray"   android:layout_height="50dp" android:id="@+id/buttonDivide" android:layout_width="fill_parent" android:layout_weight="1" android:text="/" ></Button>        
+    </LinearLayout>
+ 	
+ 	<!-- <Button style="@style/CalButtonGray" android:layout_height="50dp" android:id="@+id/buttonLeftParen" android:text="(" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+       		 <Button style="@style/CalButtonGray" android:layout_height="50dp"  android:id="@+id/buttonRightParen" android:text=")" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+ 	 -->   
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button style="@style/CalButtonDarkGray"  android:layout_height="50dp" android:id="@+id/button7" android:text="7"   android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonDarkGray"  android:layout_height="50dp"  android:id="@+id/button8" android:text="8" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonDarkGray"  android:layout_height="50dp"  android:id="@+id/button9" android:text="9" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonGray"   android:layout_height="50dp"  android:id="@+id/buttonTimes" android:text="*" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+    </LinearLayout>
+
+  
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button style="@style/CalButtonDarkGray"  android:layout_height="50dp" android:id="@+id/button4" android:text="4" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonDarkGray"   android:layout_height="50dp"  android:id="@+id/button5" android:text="5" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonDarkGray"   android:layout_height="50dp"  android:id="@+id/button6" android:text="6" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonGray"   android:layout_height="50dp"  android:id="@+id/buttonMinus" android:text="-" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button style="@style/CalButtonDarkGray"   android:layout_height="50dp" android:id="@+id/button1" android:text="1" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonDarkGray"   android:layout_height="50dp"  android:id="@+id/button2" android:text="2" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonDarkGray"   android:layout_height="50dp" android:id="@+id/button3" android:text="3" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonGray"  android:layout_height="50dp"  android:id="@+id/buttonPlus" android:text="+" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button style="@style/CalButtonGray"  android:layout_height="50dp" android:id="@+id/buttonDecimal" android:layout_width="fill_parent" android:layout_weight="1" android:text="."></Button>
+        <Button style="@style/CalButtonDarkGray"   android:layout_height="50dp"  android:id="@+id/button0" android:layout_width="fill_parent" android:layout_weight="1" android:text="0"></Button>
+		<Button style="@style/CalButtonGray" android:layout_height="50dp"  android:id="@+id/buttonRightParen" android:text=")" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+        <Button style="@style/CalButtonGray"   android:layout_height="50dp"  android:id="@+id/buttonEquals" android:layout_width="fill_parent" android:layout_weight="1" android:text="="></Button>
+    </LinearLayout>
+ 
+    <LinearLayout android:id="@+id/linearLayout6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button style="@style/CalButtonOrange"   android:textSize="@dimen/button_text_size" android:layout_height="50dp"  android:id="@+id/tipButton" android:text="@string/tip" android:layout_width="fill_parent" android:layout_weight="1" ></Button>
+        <Button style="@style/CalButtonOrange" android:textSize="@dimen/button_text_size" android:layout_height="50dp"  android:id="@+id/fxButton" android:text="@string/currency" android:layout_width="fill_parent" android:layout_weight="1"></Button>
+        <Button style="@style/CalButtonGray" android:textSize="@dimen/button_text_size"  android:layout_height="50dp"  android:id="@+id/splitButton" android:text="@string/setup" android:layout_width="fill_parent" android:layout_weight="1"></Button>
+    </LinearLayout>
+
+</LinearLayout>

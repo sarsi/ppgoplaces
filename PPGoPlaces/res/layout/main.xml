@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/background" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:label="@string/app_name"
+    android:orientation="vertical" >
+
+    <Gallery
+        android:id="@+id/galleryMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/todayDate"
+        android:layoutAnimation="@anim/list_layout_controller_alt"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:persistentDrawingCache="animation|scrolling" />
+
+    <Button
+        android:id="@+id/quickButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_button_state"
+        android:onClick="quickButtonClick"
+        android:padding="@dimen/padding"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/quickText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/quickButton"
+        android:background="@drawable/text_blue_border"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:textColor="#003366"
+        android:textSize="@dimen/input_text_size"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/todayDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quickText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/quickButton"
+        android:layout_centerHorizontal="true"
+        android:background="#006699"
+        android:lines="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/item_text_size" />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/todayDate"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Location" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:background="#006699" >
+
+            <TextView
+                android:id="@+id/infoText"
+                style="@style/TextViewBlue"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sayCheese"
+                android:layout_alignLeft="@+id/viewButton"
+                android:layout_alignRight="@+id/sayCheese"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/text_brown_border_transparent"
+                android:lines="10"
+                android:padding="@dimen/padding"
+                android:textColor="#ffffcc"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/sayCheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/padding"
+                android:background="#00000000"
+                android:hapticFeedbackEnabled="true"
+                android:padding="@dimen/padding"
+                android:src="@drawable/camera2" />
+
+            <ImageButton
+                android:id="@+id/viewButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_album" 
+                android:layout_margin="@dimen/padding"
+                android:background="#00000000"
+                android:hapticFeedbackEnabled="true"
+                android:padding="@dimen/padding"
+                android:layout_alignBottom="@+id/sayCheese"
+                android:layout_below="@+id/infoText" />
+
+        </RelativeLayout>
+
+    </SlidingDrawer>
+
+</RelativeLayout>

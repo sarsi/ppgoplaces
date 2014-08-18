@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- use by view holiday and view location, item view file list_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!--  android:background="#003366" -->
+
+    <!--  TextView
+        android:id="@+id/refLoc"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/small_padding"
+        android:ellipsize="marquee"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="@dimen/small_padding"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:singleLine="true"
+        android:textColor="#ffffcc"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold" -->
+        <!-- 
+        style="@style/SmallTextViewBlue"
+        
+         -->
+    
+    <TextView
+        android:id="@+id/infoText"
+        style="@style/SmallTextViewBlue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchText1"
+        android:lines="4"
+        android:padding="@dimen/small_padding"
+        android:scrollbars="vertical"
+        android:textColor="#ffffcc"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/infoText"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_toRightOf="@id/infoText"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/photo_album" />
+
+    <ListView
+        android:id="@+id/listItem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/infoText"
+        android:drawSelectorOnTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hapticFeedbackEnabled="true"
+        android:layoutAnimation="@anim/list_layout_controller"
+        android:listSelector="@drawable/text_orange_border_transparent"
+        android:persistentDrawingCache="animation|scrolling"
+        android:textFilterEnabled="true"
+        android:textSize="@dimen/item_text_size" >
+
+        <requestFocus />
+    </ListView> 
+        <!-- 
+        android:layout_above="@id/addButton"
+        android:listSelector="@drawable/row_background_pressed_alt" -->
+
+    <TextView
+        android:id="@+id/emptyList"        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/empty_list" />
+    	<!-- 
+    	android:layout_alignBottom="@id/addButton"
+        android:layout_alignLeft="@id/addButton"
+    	style="@style/TextViewBlue" -->
+
+    <EditText
+        android:id="@+id/searchText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoText"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/emptyList"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions"
+        android:textSize="@dimen/item_text_size" 
+        android:visibility="gone" >
+    </EditText>
+    <!-- 
+    android:inputType="textCapWords" android:imeOptions="actionDone"
+    style="@style/EditTextBlue"-->
+
+    <TextView
+        android:id="@+id/distView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/viewButton"
+        android:paddingLeft="@dimen/padding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+    	<!-- android:layout_alignBottom="@id/addButton" -->
+
+    <Button
+        android:id="@+id/homeButton"
+        style="@style/ButtonOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/emptyList"
+        android:layout_alignTop="@id/addButton"
+        android:text="HOME"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/sayCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewButton"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:hapticFeedbackEnabled="true"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/camera" /> 
+        <!--  android:src="@android:drawable/ic_menu_camera" 
+         -->
+
+</RelativeLayout>

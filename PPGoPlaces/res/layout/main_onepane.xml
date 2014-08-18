@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!--
+    <fragment class="com.liseem.android.travel.ActionBarFragment"
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/> 
+     
+	<fragment
+	    android:name="com.liseem.android.travel.ViewLocation"
+	    android:id="@+id/fragment_1"
+	    android:layout_weight="1"
+	    android:layout_width="0px"
+	    android:layout_height="match_parent" />
+	<fragment 
+	    android:name="com.liseem.android.travel.PhotoAlbum"
+	    android:id="@+id/fragment_2"
+	    android:layout_weight="1"
+	    android:layout_width="0px"
+	    android:layout_height="match_parent" />
+    -->
+
+    <FrameLayout
+        android:id="@+id/fragSpace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:name="com.google.android.gms.maps.MapFragment">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="item_outer_height">48sp</dimen>
+	<dimen name="menu_item_height">44sp</dimen>
+	<dimen name="item_inner_height">45sp</dimen><!-- 52sp -->
+	<dimen name="item_text_size">22sp</dimen><!-- 28sp -->
+	<dimen name="input_text_size">20sp</dimen>	
+	<dimen name="small_text_size">16sp</dimen>	
+	<dimen name="double_text_size">48sp</dimen>
+	<dimen name="button_text_size">20sp</dimen>	
+	<dimen name="padding">10dp</dimen>
+	<dimen name="small_padding">3dp</dimen>
+	<dimen name="big_button">200dp</dimen>
+	<dimen name="small_button">80dp</dimen>	
+</resources>

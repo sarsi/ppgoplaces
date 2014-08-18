@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item layout - /layout/custom_list.xml 
+		listview layout animation anim/controller -  list_layout_controller.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"> <!--     android:background="#006699" -->
+    
+    <Button
+        android:id="@+id/quickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        
+        android:background="#1d4557"
+        android:textStyle="bold"
+        android:padding="@dimen/padding" />
+    	<!--         
+    	android:background="@drawable/main_button_state"
+        android:textColor="#99ccff"    	
+        android:onClick="quickButtonClick"		
+    	 -->
+
+
+    <EditText
+        android:id="@+id/quickText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/quickButton"
+        android:ems="10"
+        android:padding="@dimen/padding"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/input_text_size" /> 
+        <!--  
+        android:background="@drawable/text_blue_border"
+        android:textColor="#003366"
+        android:textStyle="bold"
+        -->
+    
+    <TextView
+        android:id="@+id/infoText"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quickText"
+        android:layout_marginTop="@dimen/small_padding"
+        android:padding="@dimen/small_padding"
+        android:textColor="#ffffcc"
+ 
+        android:textStyle="bold" />
+    	<!--  
+    	style="@style/SmallTextViewBlue"
+    	android:textSize="@dimen/small_text_size"
+    	-->
+    
+    <Spinner
+        android:id="@+id/shopCat"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/infoText" 
+       	android:textSize="@dimen/item_text_size" />
+    	<!-- 
+        android:background="#1d4557"
+       	android:textStyle="bold"
+      	android:textColor="#003366" 
+       	style="@style/SpinnerBarAlt" -->
+
+	<ListView
+		android:id="@+id/listItem"
+		android:persistentDrawingCache="animation|scrolling"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/addButton"
+		android:layout_below="@id/shopCat" 
+		android:layoutAnimation="@anim/list_layout_controller" >
+	</ListView>
+
+	    
+	<TextView
+	   
+		android:id="@+id/emptyList"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/addButton"
+		android:layout_below="@id/shopCat" 
+		android:gravity="center"
+		android:text="@string/empty_list" /><!-- style="@style/TextViewBlue" -->
+
+	<Button
+	    android:id="@id/addButton"
+	    style="@style/ButtonGray"
+	    android:layout_width="190sp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:shadowColor="#565853"
+	    android:text="@string/add_new"
+	    android:textStyle="bold" />
+
+	<ToggleButton
+	    android:id="@+id/showNotcomplete"
+	    style="@style/ToggleButtonBlue"
+	    android:layout_width="100sp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/addButton"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@id/addButton"
+	    android:textOff="@string/show_all"
+	    android:textOn="@string/hide"
+	    android:textStyle="bold" />
+
+</RelativeLayout>

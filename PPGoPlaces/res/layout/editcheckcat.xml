@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+    
+     <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:text="@string/change_category_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/addButton"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_changes" /><!-- style="@style/ButtonOrange" -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+            
+		    <TextView
+			        android:id="@+id/catText1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category1"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:inputType="textPersonName" ><!-- style="@style/EditTextBlue" -->
+			
+			        <requestFocus />
+			    </EditText>
+			
+			    <TextView
+			        android:id="@+id/catText2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category2"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:inputType="textPersonName" /><!-- style="@style/EditTextBlue" -->
+			
+			    <TextView
+			        android:id="@+id/catText3"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category3"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:inputType="textPersonName" /><!-- style="@style/EditTextBlue" -->
+			
+			    <TextView
+			        android:id="@+id/catText4"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category4"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:inputType="textPersonName" /><!-- style="@style/EditTextBlue" -->
+			
+			    <TextView
+			        android:id="@+id/catText5"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category5"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:inputType="textPersonName" /><!-- style="@style/EditTextBlue" -->
+            
+			    <TextView
+			        android:id="@+id/catText6"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:visibility="gone"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category6"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:visibility="gone"
+			        android:inputType="textPersonName" /><!-- style="@style/EditTextBlue" -->
+            
+			    <TextView
+			        android:id="@+id/catText7"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:visibility="gone"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category7"
+			        style="@style/EditTextBlue"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:visibility="gone"
+			        android:inputType="textPersonName" />
+            
+			    <TextView
+			        android:id="@+id/catText8"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="@dimen/padding"
+			        android:visibility="gone"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <EditText
+			        android:id="@+id/category8"
+			        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:visibility="gone"
+			        android:inputType="textPersonName" /><!-- style="@style/EditTextBlue" -->
+            
+        </LinearLayout>
+    </ScrollView>
+			   
+</LinearLayout>

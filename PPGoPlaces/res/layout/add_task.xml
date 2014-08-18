@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_text_size"
+        android:layout_marginLeft="@dimen/small_padding"
+       	android:layout_marginTop="@dimen/small_padding"
+       	android:visibility="gone"
+       	android:text="@string/holiday_checklist" />
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/itemName"
+        android:layout_below="@id/titleName"
+        android:onClick="onSaveItemClick"
+        android:textSize="@dimen/button_text_size" />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/double_text_size"
+        android:inputType="textCapWords"
+        android:layout_below="@id/addItem"
+        android:lines="2" />
+
+    <Spinner
+        android:id="@+id/taskSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:text="@string/task_category" />   
+  
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"  
+        android:textSize="@dimen/item_text_size"     
+        android:layout_below="@+id/itemName"/> 
+    
+    <EditText
+        android:id="@+id/itemNotes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="textCapWords|textAutoComplete|textMultiLine"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/taskSpinner"
+        android:gravity="top"
+        android:hint="@string/notes_"
+        android:textSize="12sp" />
+
+</RelativeLayout>

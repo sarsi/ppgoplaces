@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+		android:id="@+id/map_title"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+ 		android:text="@string/map_title" />
+    
+    <EditText
+ 		android:id="@+id/locate_address"
+ 		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:inputType="text"
+		android:scrollbars="vertical"
+		android:imeOptions="actionSearch"
+		android:layout_below="@id/map_title"
+		android:drawableRight="@android:drawable/ic_menu_search"
+ 		android:lines="2" /> 
+ 		<!-- android:inputType="textCapWords|textAutoCorrect|textMultiLine" -->
+    	
+   <Button
+       android:id="@+id/map_location_button"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@id/locate_address"
+       android:layout_marginLeft="@dimen/small_padding"
+       android:layout_marginTop="@dimen/small_padding"    
+       android:visibility="gone"  
+       android:textStyle="bold"/> 
+       <!-- android:text="@string/map_address" 
+       android:onClick="mapLocationClick" -->
+   
+     <Button
+		android:id="@+id/use_location_button"
+ 		android:layout_width="150dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_alignParentRight="true"
+ 		android:layout_marginRight="@dimen/small_padding"
+ 		android:layout_marginTop="@dimen/small_padding"
+ 		android:layout_below="@id/locate_address"
+ 		android:layout_toRightOf="@id/map_location_button" 	
+ 		android:visibility="gone"	
+ 		android:textStyle="bold"/>     
+ 		<!-- android:text="@string/use_location" 
+ 		android:onClick="useLocationClick"--> 
+
+  <com.google.android.gms.maps.MapView 
+        android:id="@+id/map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/use_location_button"       
+        android:clickable="true" /> 
+        <!--  class="com.google.android.gms.maps.SupportMapFragment" -->
+     	<!--  android:apiKey="0riAp5Zuv0TmIB7ooEPC6CSbVDCDEgFPy7rE6Zw"/> --> <!-- com.google.android.maps.MapView -->
+  		<!--debug key: "0riAp5Zuv0TmIB7ooEPC6CSbVDCDEgFPy7rE6Zw"--> <!--Map v2   AIzaSyBfu7S9baypgCgwUUtRvMq9bN9jTF_gIoE -->
+  		<!--release key: "0riAp5Zuv0TkZdjlxCJFN2pLBGZlgsu5d2okf5g"-->
+
+</RelativeLayout>

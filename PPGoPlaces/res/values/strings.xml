@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to PPGoPlaces!</string>
+    <string name="add">Add</string>
+    <string name="sort">Sort</string>
+    <string name="update">Update</string>
+    <string name="OK">OK</string>   
+    <string name="quit">Quit</string>
+    <string name="discard">Discard</string>
+    <string name="delete">Delete</string>    
+    <string name="app_name">PPGoPlaces</string>
+    <string name="name_of_places">Name of Places</string>
+    <string name="name_of_holiday">My Holidays</string>
+    <string name="add_new_holiday"> Add New Holiday</string>
+    <string name="add_new_location">Add New Location</string>
+    <string name="update_location"> Update Location</string>
+    <string name="update_holiday"> Update Holiday Info</string>
+    <string name="edit_holiday"> EDIT HOLIDAY</string>
+    <string name="edit_location">EDIT LOCATION</string>
+    <string name="view_holiday"> Holidays and Trips</string>
+    <string name="delete_holidays">Delete Selected Holidays</string>
+    <string name="no_holiday">NO HOLIDAY</string>
+    <string name="add_a_new_trip">ADD A NEW HOLIDAY/TRIP</string>
+    <string name="cancel">Cancel</string>    
+    <string name="hol_name_hint_text">Enter "Holiday Name"" below (e.g. Germany - May 2010)</string>  
+    <string name="loc_add_hint_text">"Enter address here or search by map to get address, e.g. 5th Avenue, New York, USA"</string>  
+    <string name="unsaved_changes">Unsaved Changes</string>  
+    <string name="unsaved_changes_message">Do you want to Abort without saving?</string>  
+    <string name="abort">Yes, Abort</string>  
+    <string name="view_holidays">Holiday List</string>  
+    <string name="view_locations">View Locations</string>  
+    <string name="view_shopping">Shopping List</string>  
+    <string name="edit">edit</string>  
+    <string name="notes_">"Notes: "</string>  
+    <string name="action_select_title">Action Menu</string>
+    <string name="post_action_title">Added Successfully</string>
+    <string name="update_action_title">Updated Successfully</string>
+    <string name="whats_next">What do you like to do next?</string>
+    <string name="add_another_holiday">Add another trip</string>
+    <string name="add_a_new_loc">NEW PLACE OF INTEREST</string>
+    <string name="list_view">Return to List view</string>
+    <string name="map_it">Find Map</string>
+    <string name="view_map">View Map</string>
+    <string name="map_title">Map A Location</string> 
+    <string name="map_address">Find Address</string>
+    <string name="use_location">Use Location</string>
+    <string name="use_current">Current Location</string>
+    <string name="current_location">Your Current Location</string>
+    <string name="tripcountry">Trip Country</string>
+    <string name="choose_a_country">Destination country</string>
+    <string name="choose_holiday_country">Enter your next destination, e.g. UK, Germany</string>
+    <string name="hint_date">Tap On Date To Change..</string>
+    <string name="enter_name_of_your_trip">Enter name of your trip</string>
+    <string name="date_out_of_range">Location Date is not within Holiday period"2</string>
+    <string name="alert">Alert</string>
+    <string name="date_not_within_holiday_period">Date Not Within Holiday Period</string>
+    <string name="holiday_information">Holiday Information :</string>
+    <string name="loc_name_hint">Enter Location Name</string>
+    <string name="say_cheese">Take Picture</string>
+    <string name="date_mismatch">Date MisMatch</string>
+    <string name="continue_update">Yes.SAVE</string>
+     <string name="cancel_to_edit">NO.Return to Edit</string>
+     <string name="add_goody">Add item</string>
+     <string name="add_location_for_goody">Add location</string>
+     <string name="remove_selected_items">Removed Selected Items</string>
+     <string name="show_local_items_only">Show Local Items</string>
+     <string name="shopping">Shopping List</string>
+     <string name="add_shopping">Add Shopping Item</string>
+     <string name="use_current_location">Use Current</string>
+     <string name="use_address">Use Address</string>
+     <string name="image_gallery">View Photos</string>
+     <string name="tag_location">Tag Location To Holiday</string>
+     <string name="location_name">Location Name</string>
+     <string name="location_gallery">Location Photos Gallery</string>
+     <string name="delete_image">Delete Image?</string>
+     <string name="mark_image">Mark For Delete</string>
+     <string name="unmark_image">UnMark For Delete</string>
+     <string name="unmark">UnMark</string>
+     <string name="mark">Mark</string>
+     <string name="handyman">Handyman</string>
+     <string name="reverse">Reverse</string>
+     <string name="add_new">Add New</string>
+     <string name="no_holiday_found">No Holiday Found</string>
+     <string name="entry_error">Error Message</string>
+     <string name="home">Home     </string>
+     <string name="_home_">"  HOME "</string>
+     <string name="location_address_found">Location Address Found</string>
+     <string name="use_this_address">Use This Address</string>
+     <string name="myprefs">My Preferences</string>
+     <string name="list_is_empty">List Is Empty</string>
+     <string name="holiday_checklist">Holiday CheckList</string>
+     <string name="empty_list">Empty List</string>
+     <string name="no_items">List Is Empty</string>
+     <string name="task_category">Task Category</string>
+     <string name="home_general">Home, General</string>
+     <string name="no_holiday_tag_to_location">Not Tag To Holiday</string>
+     <string name="delete_selected">Delete All Selected</string>
+     <string name="preference_settings">My Preference Setting</string>
+     <string name="update_my_preferences">Update My Preferences</string>
+     <string name="trip_calculator_setup">Trip Calculator Setup</string>
+     <string name="album">Album</string>
+     <string name="today_date">Today Date</string>
+     <string name="enter_holiday_name">Enter Holiday Name</string>
+     <string name="add_city_of_visit">Add Cities Of Visit</string>
+     <string name="enter_location_address">Enter Location Address</string>
+     <string name="get_address">Address</string>
+     <string name="find_map">Find Map</string>
+     <string name="camera">Camera</string>
+     <string name="tip">tip</string>
+     <string name="currency">currency</string>
+     <string name="setup">Setup</string>
+     <string name="hide">Hide</string>
+     <string name="show_all">Show All</string>
+     <string name="holiday">Holiday     </string>
+     <string name="select">Selected</string>
+     <string name="unselect"></string>
+     <string name="pictures_tagged">Selected Pictures Added To Location Album</string>
+     <string name="press_here_for_context_menu">Press here for context menu</string>
+     <string name="menu_here">MENU HERE</string>
+     <string name="target_price">Target Price</string>
+     <string name="target_price_home_currency">"Target Price (Home Currency) : "</string>
+     <string name="shopping_list">Shopping List</string>
+     <string name="facebook">Facebook Login</string>
+	<string name="eula_title">License Agreement</string>
+	<string name="eula_accept">Accept</string>
+	<string name="eula_refuse">Don\'t Accept</string>
+	<string name="view_checklist">Check List</string>
+	<string name="last_location">Last Location</string>
+	<string name="welcome_notes">
+	    		<h1>Thank you for trying out PPGoPlaces</h1>
+	    		<hr />
+	    		<br></br>
+	    		<p>Today smart phone allowed us to spontaneously take interesting pictures, 
+     		   capturing the moment and wonderful memory whether we are at home or while on holiday. 
+     		   However, the camera or photo gallery fell short of providing us a way to document or present 
+     		   the memory the way we like to remember it, i.e. recalling details of the event and sweet moment, 
+     		   when and where. </p>
+
+				<p>Like many, I have been trying for years hoping to find a better way to recall the event of many 
+				pictures that I took over the years, trying hard to recall the details of the moments. </p>
+
+				<p>Recently, I got interested in learning programming for Android, so I thought what best then to write an app 
+				that help me better organize these photos and organize the memories. The journey of learning Android is a real joy 
+				and a very exciting one, mainly because I am be able to write a app that I love to have and the way I use it.  </p>
+
+				<h2>So what is PPGoPlaces? or PP Going Places</h2>
+
+				<p>Basically, the app purpose is around capturing the location, or place of interest that we collected.  
+				The \"Add Location\" feature make use of Google location aware to assist user in discovering the address  
+				or location GPS co-ordinates (i.e. if user is away from data roaming location, or away from home country. 
+				The former required access to data network or network connection. </p>
+
+				<p>The app also allows adding holiday information, whether pre or post holiday trip, allowing the user to 
+				group the locations to a particular holiday.  As an example, a holiday to Italy, which I usually like to label 
+				as \"Italy – August 2010\" and the user is able to then tag a whole bunch of locations he/she visited to the holiday, 
+				such as Colosseum in Rome, Leaning Tower of Pisa, Pompeii, Uffizi Museum in Florence, etc. </p>
+
+				<p>Once adding location and upon selecting a location, the camera button will be available, which let the user 
+				make use of Android default camera app to take picture and in turn tag it to the location selected. Once pictures 
+				are successfully added to a location, the album button will be available so that user is able to review the 
+				picture for the selected location.</p>
+
+				<p>I had also added couple of useful utilities that I really like, I actually does these previously on either paper base 
+				, sometime as a note on phone notepad or even save as a draft in email, but none of the methods previously can give 
+				me a better way to manage the list. These utility apps are a holiday checklist, a shopping list  
+				and a very simple calculator.</p>
+					
+    			<p><b>Hope you ENJOY the application as much as I do. </b></p>
+    			<p>Do drop me a mail at <b>ppgoplaces@gmail.com</b> if you like the app.</p> 
+   			</string>
+	<string name="simple_help">Simple Help</string>
+	<string name="do_not_show_again">Do not show this again.</string>
+	<string name="sdcard_is_not_found">Sdcard is not mounted, please check and retry</string>
+	<string name="save_location_image">Save Location Image</string>
+	<string name="share_this_view">Share This View</string>
+	<string name="ppgoplaces">com.liseem.android.travel</string>
+	<string name="change_category_name">Change Category Name</string>
+	<string name="save_changes">Save Changes</string>
+	<string name="nice_shot">Nice shot! new picture added to location</string>
+	<string name="No_network_for_map_show">No data network connection found, required for display map</string>
+	<string name="No_location_info">No location information found</string>
+	<string name="delete_this_holiday">Delete this Holiday?</string>
+	<string name="note_deleted_record_is_not_recoverable">"\n\nNOTE: \nDeleted record is not recoverable. "</string>
+	<string name="yes_delete">YES, Delete</string>
+	<string name="cancel_action">Cancel Action</string>
+	<string name="edit_">"edit "</string>
+	<string name="delete_">delete</string>
+	<string name="view_locations_map">View Locations Map</string>
+	<string name="shopping_list_for_holiday">Shopping List For Holiday</string>
+	<string name="view_home_locations">View Home Locations</string>
+	<string name="holiday_menu">Holiday Menu</string>
+	<string name="settings">Settings</string>
+	<string name="help">Help</string>
+	<string name="sort_by_start_date">Sort By Start Date</string>
+	<string name="sort_by_name">Sort By Name</string>
+	<string name="holiday_name_is_empty">Holiday Name Is Empty</string>
+	<string name="start_date_cannot_be_after_end_date">start date must before end date</string>
+	<string name="start_date_">"Start Date: "</string>
+	<string name="end_date_">"End Date: "</string>
+	<string name="new_holiday_added">New Holiday Added</string>
+	<string name="holiday_information_updated">Holiday Information Updated</string>
+	<string name="show_all_items">Show All Items</string>
+	<string name="nice_shot_new_picture_added_to_item">Nice shot! new picture added to item</string>
+	<string name="my_shopping_list">My Shopping List</string>
+	<string name="previous_picture_deleted">Previous Picture Deleted</string>
+	<string name="foreign_">"Foreign : "</string>
+	<string name="home_">"Home :  "</string>
+	<string name="setup_fx_rate">Setup FX Rate</string>
+	<string name="about">About</string>
+	<string name="trip_calculator">Trip Calculator</string>
+	<string name="location_menu">Location Menu</string>
+	<string name="set_as_default">Set As Default</string>
+	<string name="share_location">Share Location</string>
+	<string name="view_saved_map">View Saved Map</string>
+	<string name="add_photo_to_album">Add Photo To Album</string>
+	<string name="ok">OK</string>
+	<string name="delete_this_location_">Delete this Location?</string>
+	<string name="_note_deleted_record_is_not_recoverable_">"\n\nNOTE: \nDeleted record is not recoverable. "</string>
+	<string name="nice_shot_new_picture_added_to_album">Nice shot! new picture added to album</string>
+	<string name="file_saved_successfully_">File saved successfully!</string>
+	<string name="file_create_not_successful_">File create not successful!</string>
+	<string name="take_picture">Take Picture</string>
+	<string name="view_picture">View Picture</string>
+	<string name="send_item">Send Item</string>
+	<string name="delete_task_action">Delete Task Action</string>
+	<string name="delete_this_item_">Delete this Item?</string>
+	<string name="delete_completed_tasks_action">Delete Completed Tasks Action</string>
+	<string name="delete_selected_task_s_">DELETE selected Task(s)?</string>
+	<string name="uncheck_all_tasks">uncheck all</string>
+	<string name="uncheck_all_checked_tasks_">Uncheck all checked tasks?</string>
+	<string name="yes">YES</string>
+	<string name="reset_checklist_to_user_default">Reset Checklist To User Default</string>
+	<string name="current_tasks_will_be_overwritten_">Current tasks will be overwritten!</string>
+	<string name="_proceed_to_reset_checklist_">"\nProceed to reset checklist? "</string>
+	<string name="save_user_default_checklist">Save User Default Checklist</string>
+	<string name="any_previously_save_file_will_be_overwritten_">Any previously save file will be overwritten!</string>
+	<string name="_proceed_to_save_default_checklist_">"\nProceed to save default checklist? "</string>
+	<string name="holiday_packing_list_choice">Holiday Packing List Choice</string>
+	<string name="his_packing_list">His packing list</string>
+	<string name="her_packing_list">Her packing list</string>
+	<string name="save_as_user_default">save as default</string>
+	<string name="reset_to_user_default">reset to default</string>
+	<string name="delete_all_completed">delete all completed</string>
+	<string name="rename_category">rename category</string>
+	<string name="reset_to_factory_default">reset to factory</string>
+	<string name="no_user_default_found">No User Default Found</string>
+	<string name="my_holiday_checklist">My Holiday CheckList</string>
+	<string name="wait_loading_checklist">Wait ... Loading checklist</string>
+	<string name="no_user_default_created">No User Default Created</string>
+	<string name="current_directory_">"Current Directory: "</string>
+	<string name="_empty_task_name">\tEmpty Task Name</string>
+	<string name="please_kindly_enter_task_name">Please Kindly Enter Task Name</string>
+	<string name="data_network_is_no_longer_available_">Data network is no longer available...</string>
+	<string name="no_new_update_">No new update.</string>
+	<string name="resume_location_updates">Resume Location Updates</string>
+	<string name="stop_location_updates">Stop Location Updates</string>
+	<string name="skip">Skip</string>
+	<string name="device_gps_not_activated">Device GPS Not Activated</string>
+	<string name="for_outdoor_and_most_accurate_location_detection_please_turn_on_gps_">"For \"Outdoor\" and most accurate location detection, please turn ON GPS. "</string>
+	<string name="_note_it_may_takes_awhile_for_the_first_location_fix_">\n\nNote: It may takes awhile for the first location fix.</string>
+	<string name="please_enter_location_name">Please Enter Location Name</string>
+	<string name="locations_within_">"Locations Within "</string>
+	<string name="tips">Tips</string>
+	<string name="location_address_found_">Location Address found: \n</string>
+	<string name="_please_click_address_found_to_use_this_address">\nPlease click \"Address Found\" to use this address</string>
+	<string name="new_address_found_">New Address Found:\n</string>
+	<string name="not_use">not use</string>
+	<string name="holiday_information_">"Holiday Information: "</string>
+	<string name="_name_">"\nName: "</string>
+	<string name="_from_">"\nFrom: "</string>
+	<string name="_to_">" \nTo: "</string>
+	<string name="data_connection_not_available">Data Connection Not Available</string>
+	<string name="location_name_is_empty">Location Name Is Empty</string>
+	<string name="_copyright_2012_all_rights_reserved">\nCopyright 2012, All Rights Reserved</string>
+	<string name="last_backup_">"Last Backup: "</string>
+	<string name="map_satellite_view_enable">Map - Satellite View Enable</string>
+	<string name="map_satellite_view_disable">Map - Satellite View Disable</string>
+	<string name="find_location_accurracy_high_slow">Find Location - Accurracy High/Slow</string>
+	<string name="find_location_accuracy_low_fast">Find Location - Accuracy Low/Fast</string>
+	<string name="list_scrolling_text_enable">List - Scrolling Text Enable</string>
+	<string name="list_scrolling_text_disable">List - Scrolling Text Disable</string>
+	<string name="change_email_signature">Change email Signature</string>
+	<string name="enter_email_signature_">"Enter email Signature: "</string>
+	<string name="restore_database">Restore Database</string>
+	<string name="data_lost_">"DATA LOST? "</string>
+	<string name="_note_all_current_data_will_be_overwritten_">"\n\nNOTE: \nall current data will be overwritten "</string>
+	<string name="important_">"IMPORTANT? "</string>
+	<string name="_note_do_not_backup_if_your_current_information_is_corrupted_">"\n\nNOTE: \ndo not backup if your current information is corrupted. "</string>
+	<string name="yes_backup">YES, Backup</string>
+	<string name="backup_completed">Backup Completed</string>
+	<string name="restore_successfully">Restore Successfully</string>
+	<string name="no_backup_found_to_restore">No Backup Found to Restore</string>
+	<string name="error_during_operation_">"Error During Operation: "</string>
+	<string name="backup_data">Backup Data</string>
+	<string name="restore_data">Restore Data</string>
+	<string name="reset_checklist">Reset CheckList</string>
+	<string name="email_signature">Email Signature</string>
+	<string name="device_storage_is_currently_not_available">Device storage is currently not available</string>
+	<string name="name_picture">Name Picture</string>
+	<string name="enter_a_name_below_">"Enter A Name Below: "</string>
+	<string name="no_picture_selected">No Picture Selected</string>
+	<string name="_filename_">"\nFilename: "</string>
+	<string name="_location_">"\nLocation : "</string>
+	<string name="_address">\nAddress</string>
+	<string name="picture_menu">Picture Menu</string>
+	<string name="share">Share</string>
+	<string name="remove">Remove</string>
+	<string name="delete_file">Delete File</string>
+	<string name="rotate">Rotate</string>
+	<string name="details">Details</string>
+	<string name="rename">Rename</string>
+	<string name="file_successfully_deleted">File Successfully Deleted</string>
+	<string name="remove_from_album">Remove From Album</string>
+	<string name="_remove_tagging_from_location_">" REMOVE tagging from location?"</string>
+	<string name="yes_remove">YES, Remove</string>
+	<string name="to_home_">"to Home "</string>
+	<string name="fxrate">fxRate</string>
+	<string name="tippercent">tipPercent</string>
+	<string name="enter_exchange_rate_below_">Enter exchange rate below,  \nclick \"Check Rate\" to verify conversion</string>
+	<string name="enter_customary_tips_below_e_g_12_for_12_">"Enter customary tips below, e.g. 12 for 12% "</string>
+	<string name="please_enter_a_exchange_rate">Please enter a exchange rate</string>
+	<string name="_1_of_foreign_">"$1 of foreign  = "</string>
+	<string name="_home_currency">" home currency"</string>
+	<string name="_1_home_">"$1 home = "</string>
+	<string name="_of_foreign_currency">" of foreign currency"</string>
+	<string name="select_directory">Select Directory</string>
+	<string name="unsaved_changes_">Unsaved Changes?</string>
+	<string name="photo_list_successfully_retrieved_">Photo list successfully retrieved!</string>
+	<string name="unable_to_retrieve_photo_list_information">Unable to retrieve photo list Information</string>
+	<string name="please_be_patient_the_map_will_take_a_while_to_load">Please Be Patient, The Map Will Take A While To Load</string>
+	<string name="cannot_proceed_with_request_network_not_available">Cannot Proceed With Request, Network Not Available</string>
+	<string name="sdcard_is_not_mounted_please_check_and_retry">Sdcard is not mounted, please check and retry</string>
+	<string name="no_location_found">No Location Found</string>
+	<string name="add_new_item">Add New Item</string>
+	<string name="update_item">Update Item</string>
+	<string name="ppgoplaces_help">PPGoPlaces - HELP</string>
+	<string name="item_action">Item Action</string>
+	<string name="show">Show</string>
+	<string name="new_">New</string>
+	<string name="checklist_name">Checklist Name</string>
+	<string name="enter_checklist_name">Enter Checklist Name</string>
+	<string name="save">Save</string>
+	<string name="backup_database">Backup Database</string>
+	<string name="yes_restore">YES, Restore</string>
+	<string name="verify">Verify</string>
+	<string name="home_currency_">"Home Currency : "</string>
+	<string name="amtplustip">amtPlusTip</string>
+	<string name="tip_computation">Tip Computation</string>
+	<string name="convert">Convert</string>
+	<string name="set_start_date">Set Start Date</string>
+	<string name="set_end_date">Set End Date</string>
+	<string name="stop">Stop</string>
+	<string name="where_are_you">Where Are You</string>
+	<string name="you_are_here">You Are Here</string>
+	<string name="mmm_">mmm....</string>
+	<string name="holland_market_singapore">Holland Village Market and Food Centre, Lorong Mambong, Singapore</string>
+	<string name="date_must_be_within_holiday_period">Date must be within holiday period</string>
+	<string name="map">Map</string>
+	<string name="normal">normal</string>
+	<string name="satellite">satellite</string>
+	<string name="hybrid">hybrid</string>
+	<string name="terrain">terrain</string>
+	<string name="last_known">Last Known</string>
+	<string name="map_view">Map View</string>
+	<string name="note_no_network_available">Note: No Network Available</string>
+	<string name="note_cannot_resolve_address_no_network_available">Note: Cannot Resolve Address, No Network Available</string>
+	<string name="_location_information_not_available">\tLocation Information Not Available</string>
+	<string name="new_item">New Item</string>
+	<string name="enter_item_name">Enter item name</string>
+	<string name="location_action">Location Action</string>
+	<string name="holiday_action">Holiday Action</string>
+	<string name="new_picture_tag_to_location_album">New picture tag to location album</string>
+	<string name="no_location_information_found">No Location Information Found</string>
+	<string name="no_data_network_connection">No Data Network Connection</string>
+</resources>

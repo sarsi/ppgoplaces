@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- view for shopping item dialog box, called by ShoppingList.java -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding"
+        android:layout_weight="0.95" />
+
+    <TextView
+        android:id="@+id/itemInfo"
+        style="@style/SmallTextViewBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
+        android:layout_below="@id/itemImage"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:lines="8"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
